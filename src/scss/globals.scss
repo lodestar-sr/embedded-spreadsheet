@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #D4D4D4;
+}
+
+::-webkit-scrollbar-thumb {
+  padding: 2px;
+  background: #898989;
+  border-radius: 10px;
+  border: 2.5px solid #D4D4D4;
+
+  &:vertical {
+    border-top-width: 0;
+    border-bottom-width: 0;
+  }
+
+  &:horizontal {
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+
+  &:hover {
+    border-width: 0;
+  }
+}
+
+.d-flex-center {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@for $i from 1 through 3 {
+  .flex-#{$i} {
+    flex: $i !important;
+  }
+}
+
+.d-grid {
+  display: grid !important;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-move {
+  cursor: move !important;
+}
+
+.w-0 {
+  width: 0 !important;
+}
+
+.h-0 {
+  height: 0 !important;
+}
+
+.w-full {
+  width: 100vw !important;
+}
+
+.h-full {
+  height: 100vh !important;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly !important;
+}
+
+.text-ellipse {
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+
+.pointer-event-none {
+  pointer-events: none !important;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: none;
+}
+
+div.ag-root .ag-cell-focus {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}

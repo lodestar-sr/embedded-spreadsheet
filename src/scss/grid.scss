@@ -1,0 +1,23 @@
+.ag-row {
+  border: 0 !important;
+
+  .ag-cell {
+    border-right: 1px solid #babfc7 !important;
+    border-bottom: 1px solid #babfc7 !important;
+
+    &.disabled {
+      background: #f8f8f8 !important;
+    }
+  }
+}
+
+.ag-header-row {
+
+  .ag-header-cell {
+    border-right: 1px solid #babfc7 !important;
+
+    .ag-header-cell-resize {
+      opacity: 0;
+    }
+  }
+}

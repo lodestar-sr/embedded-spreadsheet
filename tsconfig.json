@@ -1,0 +1,46 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "module": "esnext",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "paths": {
+      "@app/*": [
+        "app/*"
+      ],
+      "@shared/*": [
+        "app/shared/*"
+      ],
+      "@env": [
+        "environments/environment"
+      ],
+      "@modules/*": [
+        "app/modules/*"
+      ],
+      "@models/*": [
+        "app/models/*"
+      ],
+      "@services/*": [
+        "app/services/*"
+      ],
+      "@scss/*": [
+        "scss/*"
+      ]
+    },
+    "lib": [
+      "es2017",
+      "dom"
+    ]
+  }
+}

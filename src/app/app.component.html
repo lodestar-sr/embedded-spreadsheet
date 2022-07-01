@@ -1,0 +1,17 @@
+<div class="w-full h-full d-flex flex-column p-4">
+  <div class="d-flex align-items-end mb-2">
+    <img src="/assets/images/logo.png">
+    <button class="btn btn-primary ml-auto" (click)="onExport()">Export to CSV</button>
+  </div>
+
+  <app-spreadsheet class="flex-grow-1" [$export]="$$export"></app-spreadsheet>
+</div>
+
+<ngx-spinner
+  [fullScreen]="true"
+  bdColor="#2f373c99"
+  color="#fff"
+  size="medium"
+  type="ball-scale-multiple"
+>
+</ngx-spinner>
